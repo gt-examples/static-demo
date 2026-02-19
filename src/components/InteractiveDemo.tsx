@@ -23,7 +23,7 @@ function ToggleGroup({
         <button
           key={opt.value}
           onClick={() => onChange(opt.value)}
-          className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
+          className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all cursor-pointer ${
             value === opt.value
               ? "bg-neutral-700 text-neutral-100 shadow-sm"
               : "text-neutral-500 hover:text-neutral-300"
@@ -81,7 +81,7 @@ export default function InteractiveDemo({
 }: Props) {
   const [s1Gender, setS1Gender] = useState("male");
   const [s2Gender, setS2Gender] = useState("male");
-  const [s2Item, setS2Item] = useState("ball");
+  const [s2Adj, setS2Adj] = useState("clever");
   const [s3Gender, setS3Gender] = useState("male");
 
   return (
@@ -107,9 +107,9 @@ export default function InteractiveDemo({
         </p>
       </Card>
 
-      {/* Scenario 2: Combinatorial */}
+      {/* Scenario 2: Subject × Adjective */}
       <Card
-        title="Combinatorial: Subject × Object"
+        title="Subject × Adjective Agreement"
         badge="<Static> × <Static>"
       >
         <div className="flex flex-wrap gap-2">
@@ -123,34 +123,38 @@ export default function InteractiveDemo({
           />
           <ToggleGroup
             options={[
-              { label: "⚽ Ball", value: "ball" },
-              { label: "🖍️ Crayon", value: "crayon" },
-              { label: "📖 Book", value: "book" },
+              { label: "🧠 Clever", value: "clever" },
+              { label: "😊 Happy", value: "happy" },
             ]}
-            value={s2Item}
-            onChange={setS2Item}
+            value={s2Adj}
+            onChange={setS2Adj}
           />
         </div>
-        <OutputBox>{scenario2[`${s2Gender}-${s2Item}`]}</OutputBox>
+        <OutputBox>{scenario2[`${s2Gender}-${s2Adj}`]}</OutputBox>
         <CodeLine>
-          {`<T>The <Static>{getSubject(...)}</Static> plays with the <Static>{getItem(...)}</Static>.</T>`}
+          {`<T>The <Static>{getSubject(...)}</Static> is very <Static>{getAdjective(...)}</Static>.</T>`}
         </CodeLine>
+        <p className="text-xs text-neutral-500 italic">
+          In Spanish: &quot;El niño es muy <strong>listo</strong>&quot; vs
+          &quot;La niña es muy <strong>lista</strong>&quot; — the adjective
+          ending changes to agree with the subject&apos;s gender.
+        </p>
         <div className="text-xs text-neutral-500">
           <p className="font-medium mb-1.5 text-neutral-400">
-            2 × 3 = 6 translation entries:
+            2 × 2 = 4 translation entries:
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-1">
+          <div className="grid grid-cols-2 gap-1">
             {(["male", "female"] as const).map((g) =>
-              (["ball", "crayon", "book"] as const).map((i) => (
+              (["clever", "happy"] as const).map((a) => (
                 <span
-                  key={`${g}-${i}`}
+                  key={`${g}-${a}`}
                   className={`px-2 py-0.5 rounded text-xs ${
-                    s2Gender === g && s2Item === i
+                    s2Gender === g && s2Adj === a
                       ? "bg-emerald-950 text-emerald-400 border border-emerald-800 font-medium"
                       : "bg-neutral-800 text-neutral-500 border border-neutral-800"
                   }`}
                 >
-                  {g === "male" ? "boy" : "girl"} + {i}
+                  {g === "male" ? "boy" : "girl"} + {a}
                 </span>
               ))
             )}

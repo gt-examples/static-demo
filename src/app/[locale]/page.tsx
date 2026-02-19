@@ -3,50 +3,63 @@ import { getGT } from "gt-next/server";
 import { LocaleSelector } from "gt-next";
 import InteractiveDemo from "@/components/InteractiveDemo";
 
-// Helper functions must be in the same file for CLI static analysis
-function getSubject(gender: "male" | "female"): string {
+// Helper functions for Static analysis — each must have statically analyzable returns
+function getGenderedDescription(gender: "male" | "female") {
+  return gender === "male" ? "handsome boy" : "beautiful girl";
+}
+
+function getSubject(gender: "male" | "female") {
   return gender === "male" ? "boy" : "girl";
 }
 
-function getAdjective(gender: "male" | "female"): string {
-  return gender === "male" ? "handsome" : "beautiful";
+function getAdjective(adj: "clever" | "happy") {
+  return adj === "clever" ? "clever" : "happy";
 }
-
-function getItem(item: "ball" | "crayon" | "book"): string {
-  if (item === "ball") return "ball";
-  if (item === "crayon") return "crayon";
-  return "book";
-}
-
-const subjectGenders = ["male", "female"] as const;
-const items = ["ball", "crayon", "book"] as const;
 
 export default async function Home() {
   const gt = await getGT();
 
-  // Scenario 1: Gendered adjective agreement
+  // Scenario 1: Gendered adjective — single Static wrapping a combined description
   const scenario1: Record<string, React.ReactNode> = {};
-  for (const gender of subjectGenders) {
-    scenario1[gender] = (
-      <T>
-        The <Static>{getAdjective(gender)}</Static>{" "}
-        <Static>{getSubject(gender)}</Static> is playing in the park.
-      </T>
-    );
-  }
+  scenario1["male"] = (
+    <T>
+      The <Static>{getGenderedDescription("male")}</Static> is playing in the
+      park.
+    </T>
+  );
+  scenario1["female"] = (
+    <T>
+      The <Static>{getGenderedDescription("female")}</Static> is playing in the
+      park.
+    </T>
+  );
 
-  // Scenario 2: Combinatorial (subject × item)
+  // Scenario 2: Subject × Adjective — subject affects adjective agreement
   const scenario2: Record<string, React.ReactNode> = {};
-  for (const gender of subjectGenders) {
-    for (const item of items) {
-      scenario2[`${gender}-${item}`] = (
-        <T>
-          The <Static>{getSubject(gender)}</Static> plays with the{" "}
-          <Static>{getItem(item)}</Static>.
-        </T>
-      );
-    }
-  }
+  scenario2["male-clever"] = (
+    <T>
+      The <Static>{getSubject("male")}</Static> is very{" "}
+      <Static>{getAdjective("clever")}</Static>.
+    </T>
+  );
+  scenario2["male-happy"] = (
+    <T>
+      The <Static>{getSubject("male")}</Static> is very{" "}
+      <Static>{getAdjective("happy")}</Static>.
+    </T>
+  );
+  scenario2["female-clever"] = (
+    <T>
+      The <Static>{getSubject("female")}</Static> is very{" "}
+      <Static>{getAdjective("clever")}</Static>.
+    </T>
+  );
+  scenario2["female-happy"] = (
+    <T>
+      The <Static>{getSubject("female")}</Static> is very{" "}
+      <Static>{getAdjective("happy")}</Static>.
+    </T>
+  );
 
   // Scenario 3: String version with gt()
   const scenario3: Record<string, string> = {};

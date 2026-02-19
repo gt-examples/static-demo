@@ -1,18 +1,18 @@
 {
-  "0c95b33663520dab": [
+  "0b4236070d21a38c": [
     "El ",
     {
-      "c": "handsome",
+      "c": "boy",
       "i": 1,
       "t": "Static"
     },
-    " ",
+    " es muy ",
     {
-      "c": "boy",
+      "c": "listo",
       "i": 2,
       "t": "Static"
     },
-    " está jugando en el parque."
+    "."
   ],
   "2d783dc73d433070": {
     "c": [
@@ -33,143 +33,71 @@
     "i": 1,
     "t": "p"
   },
-  "3a9dc63809f8f4df": [
-    "La ",
+  "356ba1c7bf2c66e9": [
+    "El ",
     {
-      "c": "girl",
+      "c": "handsome boy",
       "i": 1,
-      "t": "Static"
-    },
-    " juega con el ",
-    {
-      "c": "crayon",
-      "i": 2,
-      "t": "Static"
-    },
-    "."
-  ],
-  "41dd570e506ef17b": [
-    "La ",
-    {
-      "c": "handsome",
-      "i": 1,
-      "t": "Static"
-    },
-    " ",
-    {
-      "c": "girl",
-      "i": 2,
       "t": "Static"
     },
     " está jugando en el parque."
   ],
-  "559397a2a06ec1e2": [
+  "45c5edb0a82e92e8": [
+    "La ",
+    {
+      "c": "beautiful girl",
+      "i": 1,
+      "t": "Static"
+    },
+    " está jugando en el parque."
+  ],
+  "5b7046f5d33f8277": [
     "La ",
     {
       "c": "girl",
       "i": 1,
       "t": "Static"
     },
-    " juega con el ",
+    " es muy ",
     {
-      "c": "book",
+      "c": "lista",
       "i": 2,
       "t": "Static"
     },
     "."
   ],
-  "68a15dc3398eea3b": "La girl talentosa ganó el premio.",
-  "7cbf941a134377d5": "El boy talentoso ganó el premio.",
-  "9245afc675c783bc": [
-    "El ",
-    {
-      "c": "boy",
-      "i": 1,
-      "t": "Static"
-    },
-    " juega con el ",
-    {
-      "c": "book",
-      "i": 2,
-      "t": "Static"
-    },
-    "."
-  ],
-  "95f634b691986db4": [
-    "La ",
-    {
-      "c": "girl",
-      "i": 1,
-      "t": "Static"
-    },
-    " juega con la ",
-    {
-      "c": "ball",
-      "i": 2,
-      "t": "Static"
-    },
-    "."
-  ],
-  "99c81abef20078f1": [
-    "El ",
-    {
-      "c": "boy",
-      "i": 1,
-      "t": "Static"
-    },
-    " juega con el ",
-    {
-      "c": "crayon",
-      "i": 2,
-      "t": "Static"
-    },
-    "."
-  ],
+  "68a15dc3398eea3b": "La talentosa girl ganó el premio.",
+  "7cbf941a134377d5": "El talentoso boy ganó el premio.",
   "a14aed695a153d28": {
     "c": "Concordancia gramatical entre idiomas",
     "i": 1,
     "t": "h2"
   },
-  "d3af558cf107e3f5": [
-    "El ",
-    {
-      "c": "beautiful",
-      "i": 1,
-      "t": "Static"
-    },
-    " ",
-    {
-      "c": "boy",
-      "i": 2,
-      "t": "Static"
-    },
-    " está jugando en el parque."
-  ],
-  "f3040272267b187d": [
+  "cb7c5a5d4aebdd3e": [
     "La ",
     {
-      "c": "beautiful",
+      "c": "girl",
       "i": 1,
       "t": "Static"
     },
-    " ",
+    " está muy ",
     {
-      "c": "girl",
+      "c": "feliz",
       "i": 2,
       "t": "Static"
     },
-    " está jugando en el parque."
+    "."
   ],
-  "f99a0c8b277475f2": [
+  "e0ddc83f64782e73": [
     "El ",
     {
       "c": "boy",
       "i": 1,
       "t": "Static"
     },
-    " juega con la ",
+    " está muy ",
     {
-      "c": "ball",
+      "c": "feliz",
       "i": 2,
       "t": "Static"
     },
