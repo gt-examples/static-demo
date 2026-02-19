@@ -60,14 +60,14 @@
     },
     " es muy ",
     {
-      "c": "lista",
+      "c": "inteligente",
       "i": 2,
       "t": "Static"
     },
     "."
   ],
-  "68a15dc3398eea3b": "La talentosa girl ganó el premio.",
-  "7cbf941a134377d5": "El talentoso boy ganó el premio.",
+  "68a15dc3398eea3b": "La girl talentosa ganó el premio.",
+  "7cbf941a134377d5": "El boy talentoso ganó el premio.",
   "a14aed695a153d28": {
     "c": "Concordancia gramatical entre idiomas",
     "i": 1,
@@ -95,7 +95,7 @@
       "i": 1,
       "t": "Static"
     },
-    " está muy ",
+    " es muy ",
     {
       "c": "feliz",
       "i": 2,

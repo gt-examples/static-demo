@@ -16,50 +16,35 @@ function getAdjective(adj: "clever" | "happy") {
   return adj === "clever" ? "clever" : "happy";
 }
 
+const subjectGenders = ["male", "female"] as const;
+const adjectives = ["clever", "happy"] as const;
+
 export default async function Home() {
   const gt = await getGT();
 
-  // Scenario 1: Gendered adjective — single Static wrapping a combined description
+  // Scenario 1: Gendered adjective — one <T>, CLI generates permutations
   const scenario1: Record<string, React.ReactNode> = {};
-  scenario1["male"] = (
-    <T>
-      The <Static>{getGenderedDescription("male")}</Static> is playing in the
-      park.
-    </T>
-  );
-  scenario1["female"] = (
-    <T>
-      The <Static>{getGenderedDescription("female")}</Static> is playing in the
-      park.
-    </T>
-  );
+  for (const gender of subjectGenders) {
+    scenario1[gender] = (
+      <T>
+        The <Static>{getGenderedDescription(gender)}</Static> is playing in the
+        park.
+      </T>
+    );
+  }
 
-  // Scenario 2: Subject × Adjective — subject affects adjective agreement
+  // Scenario 2: Subject × Adjective — one <T>, CLI generates all permutations
   const scenario2: Record<string, React.ReactNode> = {};
-  scenario2["male-clever"] = (
-    <T>
-      The <Static>{getSubject("male")}</Static> is very{" "}
-      <Static>{getAdjective("clever")}</Static>.
-    </T>
-  );
-  scenario2["male-happy"] = (
-    <T>
-      The <Static>{getSubject("male")}</Static> is very{" "}
-      <Static>{getAdjective("happy")}</Static>.
-    </T>
-  );
-  scenario2["female-clever"] = (
-    <T>
-      The <Static>{getSubject("female")}</Static> is very{" "}
-      <Static>{getAdjective("clever")}</Static>.
-    </T>
-  );
-  scenario2["female-happy"] = (
-    <T>
-      The <Static>{getSubject("female")}</Static> is very{" "}
-      <Static>{getAdjective("happy")}</Static>.
-    </T>
-  );
+  for (const gender of subjectGenders) {
+    for (const adj of adjectives) {
+      scenario2[`${gender}-${adj}`] = (
+        <T>
+          The <Static>{getSubject(gender)}</Static> is very{" "}
+          <Static>{getAdjective(adj)}</Static>.
+        </T>
+      );
+    }
+  }
 
   // Scenario 3: String version with gt()
   const scenario3: Record<string, string> = {};
