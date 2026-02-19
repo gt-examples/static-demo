@@ -2,31 +2,7 @@
   "0b4236070d21a38c": [
     "El ",
     {
-      "c": "boy",
-      "i": 1,
-      "t": "Static"
-    },
-    " es muy ",
-    {
-      "c": "listo",
-      "i": 2,
-      "t": "Static"
-    },
-    "."
-  ],
-  "4a85aae8f13e1d9d": [
-    "La ",
-    {
-      "c": "girl",
-      "i": 1,
-      "t": "Static"
-    },
-    " está jugando en el parque."
-  ],
-  "5b7046f5d33f8277": [
-    "La ",
-    {
-      "c": "girl",
+      "c": "niño",
       "i": 1,
       "t": "Static"
     },
@@ -38,12 +14,36 @@
     },
     "."
   ],
-  "68a15dc3398eea3b": "La girl talentosa ganó el premio.",
-  "7cbf941a134377d5": "El boy talentoso ganó el premio.",
+  "4a85aae8f13e1d9d": [
+    "La ",
+    {
+      "c": "niña",
+      "i": 1,
+      "t": "Static"
+    },
+    " está jugando en el parque."
+  ],
+  "5b7046f5d33f8277": [
+    "La ",
+    {
+      "c": "niña",
+      "i": 1,
+      "t": "Static"
+    },
+    " es muy ",
+    {
+      "c": "inteligente",
+      "i": 2,
+      "t": "Static"
+    },
+    "."
+  ],
+  "68a15dc3398eea3b": "La chica talentosa ganó el premio.",
+  "7cbf941a134377d5": "El chico talentoso ganó el premio.",
   "bd1ab7ea21aa24d6": [
     "El ",
     {
-      "c": "boy",
+      "c": "niño",
       "i": 1,
       "t": "Static"
     },
@@ -52,7 +52,7 @@
   "cb7c5a5d4aebdd3e": [
     "La ",
     {
-      "c": "girl",
+      "c": "niña",
       "i": 1,
       "t": "Static"
     },
@@ -67,7 +67,7 @@
   "e0ddc83f64782e73": [
     "El ",
     {
-      "c": "boy",
+      "c": "niño",
       "i": 1,
       "t": "Static"
     },

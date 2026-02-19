@@ -112,6 +112,28 @@
           }
         }
       }
+    },
+    "brc_maeqml7ggsi9sv5lx5g5qarv": {
+      "879f3a5f954ee8b75bf1e91f4ea9916b41c933e5beba7eb6362647a637c9c66d": {
+        "e21fd7550fa1e45446d03fe7ad31be5d6780eb31991cdbe22d3023830d1b30a5": {
+          "es": {
+            "updatedAt": "2026-02-19T04:02:03.287Z",
+            "postProcessHash": "3bacb8bfe5b9dd9ad8b9f73ee77973e12a762624f7452aa23ee88e7b9d2d4668"
+          },
+          "fr": {
+            "updatedAt": "2026-02-19T04:02:03.290Z",
+            "postProcessHash": "58530dcece8f69f28f0bf74dd327902c801b51608bbc3451078f1d861c38e0c2"
+          },
+          "ja": {
+            "updatedAt": "2026-02-19T04:02:03.291Z",
+            "postProcessHash": "f1d1ecf989b305f74c3af72cb0181a064af9472ca5fb459918db74620cf7003c"
+          },
+          "zh": {
+            "updatedAt": "2026-02-19T04:02:03.291Z",
+            "postProcessHash": "56d52754321ee872a98bf494b6788e12f0cd7749ef406fa82af91c533bc10971"
+          }
+        }
+      }
     }
   }
 }

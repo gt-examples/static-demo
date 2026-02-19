@@ -2,7 +2,7 @@
   "0b4236070d21a38c": [
     "Le ",
     {
-      "c": "boy",
+      "c": "garçon",
       "i": 1,
       "t": "Static"
     },
@@ -17,7 +17,7 @@
   "4a85aae8f13e1d9d": [
     "La ",
     {
-      "c": "girl",
+      "c": "fille",
       "i": 1,
       "t": "Static"
     },
@@ -26,7 +26,7 @@
   "5b7046f5d33f8277": [
     "La ",
     {
-      "c": "girl",
+      "c": "fille",
       "i": 1,
       "t": "Static"
     },
@@ -38,12 +38,12 @@
     },
     "."
   ],
-  "68a15dc3398eea3b": "La girl talentueuse a remporté le prix.",
-  "7cbf941a134377d5": "Le boy talentueux a remporté le prix.",
+  "68a15dc3398eea3b": "La fille talentueuse a remporté le prix.",
+  "7cbf941a134377d5": "Le garçon talentueux a remporté le prix.",
   "bd1ab7ea21aa24d6": [
     "Le ",
     {
-      "c": "boy",
+      "c": "garçon",
       "i": 1,
       "t": "Static"
     },
@@ -52,7 +52,7 @@
   "cb7c5a5d4aebdd3e": [
     "La ",
     {
-      "c": "girl",
+      "c": "fille",
       "i": 1,
       "t": "Static"
     },
@@ -67,7 +67,7 @@
   "e0ddc83f64782e73": [
     "Le ",
     {
-      "c": "boy",
+      "c": "garçon",
       "i": 1,
       "t": "Static"
     },
