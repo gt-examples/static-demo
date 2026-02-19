@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, ReactNode } from "react";
+import { useGT } from "gt-next/client";
 
 interface Props {
   scenario1: Record<string, ReactNode>;
@@ -79,6 +80,7 @@ export default function InteractiveDemo({
   scenario2,
   scenario3,
 }: Props) {
+  const gt = useGT();
   const [s1Gender, setS1Gender] = useState("male");
   const [s2Gender, setS2Gender] = useState("male");
   const [s2Adj, setS2Adj] = useState("clever");
@@ -87,11 +89,11 @@ export default function InteractiveDemo({
   return (
     <div className="space-y-6">
       {/* Scenario 1: Gendered subject */}
-      <Card title="Gendered Subject" badge="<Static>">
+      <Card title={gt("Gendered Subject")} badge="<Static>">
         <ToggleGroup
           options={[
-            { label: "👦 Boy", value: "male" },
-            { label: "👧 Girl", value: "female" },
+            { label: gt("👦 Boy"), value: "male" },
+            { label: gt("👧 Girl"), value: "female" },
           ]}
           value={s1Gender}
           onChange={setS1Gender}
@@ -101,30 +103,28 @@ export default function InteractiveDemo({
           {`<T>The <Static>{getSubject(gender)}</Static> is playing in the park.</T>`}
         </CodeLine>
         <p className="text-xs text-neutral-500 italic">
-          In Spanish: &quot;El <strong>niño</strong> está jugando…&quot; vs
-          &quot;La <strong>niña</strong> está jugando…&quot; — the article
-          changes with gender.
+          {gt('In Spanish: "El niño está jugando…" vs "La niña está jugando…" — the article changes with gender.')}
         </p>
       </Card>
 
       {/* Scenario 2: Subject × Adjective */}
       <Card
-        title="Subject × Adjective Agreement"
+        title={gt("Subject × Adjective Agreement")}
         badge="<Static> × <Static>"
       >
         <div className="flex flex-wrap gap-2">
           <ToggleGroup
             options={[
-              { label: "👦 Boy", value: "male" },
-              { label: "👧 Girl", value: "female" },
+              { label: gt("👦 Boy"), value: "male" },
+              { label: gt("👧 Girl"), value: "female" },
             ]}
             value={s2Gender}
             onChange={setS2Gender}
           />
           <ToggleGroup
             options={[
-              { label: "🧠 Clever", value: "clever" },
-              { label: "😊 Happy", value: "happy" },
+              { label: gt("🧠 Clever"), value: "clever" },
+              { label: gt("😊 Happy"), value: "happy" },
             ]}
             value={s2Adj}
             onChange={setS2Adj}
@@ -135,13 +135,11 @@ export default function InteractiveDemo({
           {`<T>The <Static>{getSubject(...)}</Static> is very <Static>{getAdjective(...)}</Static>.</T>`}
         </CodeLine>
         <p className="text-xs text-neutral-500 italic">
-          In Spanish: &quot;El niño es muy <strong>listo</strong>&quot; vs
-          &quot;La niña es muy <strong>lista</strong>&quot; — the adjective
-          ending changes to agree with the subject&apos;s gender.
+          {gt('In Spanish: "El niño es muy listo" vs "La niña es muy lista" — the adjective ending changes to agree with the subject\'s gender.')}
         </p>
         <div className="text-xs text-neutral-500">
           <p className="font-medium mb-1.5 text-neutral-400">
-            2 × 2 = 4 translation entries:
+            {gt("2 × 2 = 4 translation entries:")}
           </p>
           <div className="grid grid-cols-2 gap-1">
             {(["male", "female"] as const).map((g) =>
@@ -155,7 +153,7 @@ export default function InteractiveDemo({
                       : "bg-neutral-800 text-neutral-500 border border-neutral-800 hover:text-neutral-300"
                   }`}
                 >
-                  {g === "male" ? "boy" : "girl"} + {a}
+                  {g === "male" ? gt("boy") : gt("girl")} + {a === "clever" ? gt("clever") : gt("happy")}
                 </button>
               ))
             )}
@@ -164,11 +162,11 @@ export default function InteractiveDemo({
       </Card>
 
       {/* Scenario 3: String version */}
-      <Card title="String Translation" badge="declareStatic()">
+      <Card title={gt("String Translation")} badge="declareStatic()">
         <ToggleGroup
           options={[
-            { label: "👦 Boy", value: "male" },
-            { label: "👧 Girl", value: "female" },
+            { label: gt("👦 Boy"), value: "male" },
+            { label: gt("👧 Girl"), value: "female" },
           ]}
           value={s3Gender}
           onChange={setS3Gender}
@@ -178,42 +176,24 @@ export default function InteractiveDemo({
           {`gt(\`The talented \${declareStatic(getSubject(gender))} won the prize.\`)`}
         </CodeLine>
         <p className="text-xs text-neutral-500 italic">
-          In French: &quot;Le garçon <strong>talentueux</strong>…&quot; vs
-          &quot;La fille <strong>talentueuse</strong>…&quot; — adjective endings
-          change with gender.
+          {gt('In French: "Le garçon talentueux…" vs "La fille talentueuse…" — adjective endings change with gender.')}
         </p>
       </Card>
 
       {/* How it works */}
       <div className="rounded-xl border border-neutral-800 bg-neutral-900 p-6 space-y-3">
         <h2 className="text-base font-semibold text-neutral-100">
-          How it works
+          {gt("How it works")}
         </h2>
         <div className="text-sm text-neutral-400 space-y-2 leading-relaxed">
           <p>
-            <code className="text-emerald-400 text-xs bg-emerald-950 px-1.5 py-0.5 rounded">
-              {"<Static>"}
-            </code>{" "}
-            tells the GT CLI to statically analyze all possible return values of
-            a function and create <em>separate translation entries</em> for each
-            permutation.
+            {gt("'<'Static'>' tells the GT CLI to statically analyze all possible return values of a function and create separate translation entries for each permutation.")}
           </p>
           <p>
-            This is critical for languages with grammatical gender, noun classes,
-            or case systems where articles, adjectives, and verb forms must agree
-            with the subject or object.
+            {gt("This is critical for languages with grammatical gender, noun classes, or case systems where articles, adjectives, and verb forms must agree with the subject or object.")}
           </p>
           <p>
-            Unlike{" "}
-            <code className="text-neutral-300 text-xs bg-neutral-800 px-1.5 py-0.5 rounded">
-              {"<Var>"}
-            </code>{" "}
-            (which inserts a runtime variable into a single translation),{" "}
-            <code className="text-emerald-400 text-xs bg-emerald-950 px-1.5 py-0.5 rounded">
-              {"<Static>"}
-            </code>{" "}
-            creates multiple complete translations — one per value — so the
-            entire sentence adapts for each case.
+            {gt("Unlike '<'Var'>' (which inserts a runtime variable into a single translation), '<'Static'>' creates multiple complete translations — one per value — so the entire sentence adapts for each case.")}
           </p>
         </div>
       </div>

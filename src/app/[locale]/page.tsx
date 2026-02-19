@@ -1,4 +1,4 @@
-import { T, Static, Var } from "gt-next";
+import { T, Static } from "gt-next";
 import { getGT, declareStatic } from "gt-next/server";
 import { LocaleSelector } from "gt-next";
 import InteractiveDemo from "@/components/InteractiveDemo";
@@ -65,7 +65,7 @@ export default async function Home() {
             </a>
             <span className="text-neutral-700">/</span>
             <h1 className="text-sm font-semibold text-neutral-100">
-              Static Analysis Demo
+              {gt("Static Analysis Demo")}
             </h1>
           </div>
           <div className="flex items-center gap-3">
@@ -88,12 +88,14 @@ export default async function Home() {
       <main className="max-w-3xl mx-auto px-6 py-12">
         <div className="mb-12">
           <h2 className="text-2xl font-semibold text-neutral-100 mb-3">
-            Grammatical agreement across languages
+            {gt("Grammatical agreement across languages")}
           </h2>
           <p className="text-base text-neutral-400 max-w-xl leading-relaxed mb-4">
-            Toggle the options below and switch languages to see how{" "}
-            {"<Static>"} and declareStatic() generate separate translation
-            entries for each permutation, enabling proper grammatical agreement.
+            <T>
+              Toggle the options below and switch languages to see how{" "}
+              {"<Static>"} and declareStatic() generate separate translation
+              entries for each permutation, enabling proper grammatical agreement.
+            </T>
           </p>
           <LanguageBadge />
         </div>
