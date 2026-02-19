@@ -50,9 +50,11 @@
     "."
   ],
   "68a15dc3398eea3b": "La niña talentosa ganó el premio.",
+  "6d26e1e92ae8dcd1": "A diferencia del componente Var (que inserta una variable en tiempo de ejecución en una única traducción), el componente Static genera varias traducciones completas —una por valor— para que toda la frase se adapte a cada caso.",
   "75a2ac8496574d00": "Concordancia gramatical entre distintos idiomas",
   "76c017d1768e9bd5": "Concordancia entre sujeto y adjetivo",
   "7cbf941a134377d5": "El niño talentoso ganó el premio.",
+  "86ba91ab02f62d36": "El componente Static le indica a GT CLI que analice de forma estática todos los posibles valores de retorno de una función y genere entradas de traducción independientes para cada permutación.",
   "9c950bd4e1127395": "En español: «El niño es muy listo» vs «La niña es muy lista» — la terminación del adjetivo cambia para concordar con el género del sujeto.",
   "a2bc65d484a5d894": "👧 Niña",
   "a2c03c0108c32feb": "Traducción de cadenas",

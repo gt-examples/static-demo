@@ -187,13 +187,13 @@ export default function InteractiveDemo({
         </h2>
         <div className="text-sm text-neutral-400 space-y-2 leading-relaxed">
           <p>
-            {gt("<Static> tells the GT CLI to statically analyze all possible return values of a function and create separate translation entries for each permutation.", { id: "static_explanation_1" })}
+            {gt("The Static component tells the GT CLI to statically analyze all possible return values of a function and create separate translation entries for each permutation.")}
           </p>
           <p>
             {gt("This is critical for languages with grammatical gender, noun classes, or case systems where articles, adjectives, and verb forms must agree with the subject or object.")}
           </p>
           <p>
-            {gt("Unlike <Var> (which inserts a runtime variable into a single translation), <Static> creates multiple complete translations — one per value — so the entire sentence adapts for each case.", { id: "static_explanation_3" })}
+            {gt("Unlike the Var component (which inserts a runtime variable into a single translation), the Static component creates multiple complete translations — one per value — so the entire sentence adapts for each case.")}
           </p>
         </div>
       </div>

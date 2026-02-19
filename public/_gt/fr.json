@@ -50,9 +50,11 @@
     "."
   ],
   "68a15dc3398eea3b": "La fille talentueuse a gagné le prix.",
+  "6d26e1e92ae8dcd1": "Contrairement au composant Var (qui insère une variable évaluée à l’exécution dans une seule traduction), le composant Static génère plusieurs traductions complètes — une par valeur possible — afin que la phrase entière s’adapte à chaque cas.",
   "75a2ac8496574d00": "Concordance grammaticale entre langues",
   "76c017d1768e9bd5": "Accord sujet × adjectif",
   "7cbf941a134377d5": "Le garçon talentueux a gagné le prix.",
+  "86ba91ab02f62d36": "Le composant Static indique au GT CLI d’analyser statiquement toutes les valeurs de retour possibles d’une fonction et de créer des entrées de traduction distinctes pour chaque permutation.",
   "9c950bd4e1127395": "En espagnol : « El niño es muy listo » vs « La niña es muy lista » — la terminaison de l’adjectif change selon le genre du sujet.",
   "a2bc65d484a5d894": "👧 Fille",
   "a2c03c0108c32feb": "Traduction de chaînes",
