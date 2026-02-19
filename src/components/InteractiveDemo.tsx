@@ -146,16 +146,17 @@ export default function InteractiveDemo({
           <div className="grid grid-cols-2 gap-1">
             {(["male", "female"] as const).map((g) =>
               (["clever", "happy"] as const).map((a) => (
-                <span
+                <button
                   key={`${g}-${a}`}
-                  className={`px-2 py-0.5 rounded text-xs ${
+                  onClick={() => { setS2Gender(g); setS2Adj(a); }}
+                  className={`px-2 py-0.5 rounded text-xs text-left cursor-pointer transition-colors ${
                     s2Gender === g && s2Adj === a
                       ? "bg-emerald-950 text-emerald-400 border border-emerald-800 font-medium"
-                      : "bg-neutral-800 text-neutral-500 border border-neutral-800"
+                      : "bg-neutral-800 text-neutral-500 border border-neutral-800 hover:text-neutral-300"
                   }`}
                 >
                   {g === "male" ? "boy" : "girl"} + {a}
-                </span>
+                </button>
               ))
             )}
           </div>
