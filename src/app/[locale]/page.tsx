@@ -2,6 +2,7 @@ import { T, Static, Var } from "gt-next";
 import { getGT, declareStatic } from "gt-next/server";
 import { LocaleSelector } from "gt-next";
 import InteractiveDemo from "@/components/InteractiveDemo";
+import LanguageBadge from "@/components/LanguageBadge";
 
 // Helper functions for Static analysis — each must have statically analyzable returns
 function getSubject(gender: "male" | "female") {
@@ -73,19 +74,15 @@ export default async function Home() {
 
       <main className="max-w-3xl mx-auto px-6 py-12">
         <div className="mb-12">
-          <T>
-            <h2 className="text-2xl font-semibold text-neutral-100 mb-3">
-              Grammatical agreement across languages
-            </h2>
-          </T>
-          <T>
-            <p className="text-base text-neutral-400 max-w-xl leading-relaxed">
-              Toggle the options below and switch languages to see how{" "}
-              <Var>{"<Static>"}</Var> and <Var>declareStatic()</Var> generate
-              separate translation entries for each permutation, enabling proper
-              grammatical agreement.
-            </p>
-          </T>
+          <h2 className="text-2xl font-semibold text-neutral-100 mb-3">
+            Grammatical agreement across languages
+          </h2>
+          <p className="text-base text-neutral-400 max-w-xl leading-relaxed mb-4">
+            Toggle the options below and switch languages to see how{" "}
+            {"<Static>"} and declareStatic() generate separate translation
+            entries for each permutation, enabling proper grammatical agreement.
+          </p>
+          <LanguageBadge />
         </div>
 
         <InteractiveDemo

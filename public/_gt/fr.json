@@ -14,25 +14,6 @@
     },
     "."
   ],
-  "2d783dc73d433070": {
-    "c": [
-      "Activez les options ci-dessous et changez de langue pour voir comment ",
-      {
-        "i": 2,
-        "k": "_gt_value_2",
-        "v": "v"
-      },
-      " et ",
-      {
-        "i": 3,
-        "k": "_gt_value_3",
-        "v": "v"
-      },
-      " génèrent des entrées de traduction distinctes pour chaque permutation, permettant un accord grammatical approprié."
-    ],
-    "i": 1,
-    "t": "p"
-  },
   "4a85aae8f13e1d9d": [
     "La ",
     {
@@ -59,11 +40,6 @@
   ],
   "68a15dc3398eea3b": "La girl talentueuse a remporté le prix.",
   "7cbf941a134377d5": "Le boy talentueux a remporté le prix.",
-  "a14aed695a153d28": {
-    "c": "L'accord grammatical entre les langues",
-    "i": 1,
-    "t": "h2"
-  },
   "bd1ab7ea21aa24d6": [
     "Le ",
     {

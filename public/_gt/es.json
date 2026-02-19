@@ -14,25 +14,6 @@
     },
     "."
   ],
-  "2d783dc73d433070": {
-    "c": [
-      "Activa las opciones a continuación y cambia de idioma para ver cómo ",
-      {
-        "i": 2,
-        "k": "_gt_value_2",
-        "v": "v"
-      },
-      " y ",
-      {
-        "i": 3,
-        "k": "_gt_value_3",
-        "v": "v"
-      },
-      " generan entradas de traducción separadas para cada permutación, lo que permite una concordancia gramatical adecuada."
-    ],
-    "i": 1,
-    "t": "p"
-  },
   "4a85aae8f13e1d9d": [
     "La ",
     {
@@ -59,11 +40,6 @@
   ],
   "68a15dc3398eea3b": "La girl talentosa ganó el premio.",
   "7cbf941a134377d5": "El boy talentoso ganó el premio.",
-  "a14aed695a153d28": {
-    "c": "Concordancia gramatical entre idiomas",
-    "i": 1,
-    "t": "h2"
-  },
   "bd1ab7ea21aa24d6": [
     "El ",
     {
