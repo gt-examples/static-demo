@@ -2,6 +2,8 @@
 
 A minimal Next.js application internationalized with [gt-next](https://generaltranslation.com/docs/next), demonstrating how to add multilingual support to a Next.js App Router project.
 
+**[Live Demo →](https://static-demo.generaltranslation.dev)**
+
 ## Features
 
 - 🌍 **5 languages** — English (default), Spanish, French, Japanese, and Chinese
