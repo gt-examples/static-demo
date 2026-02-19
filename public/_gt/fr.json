@@ -1,7 +1,7 @@
 {
   "03b0c7f1911065f7": "Comment ça marche",
-  "03c96249c43ca8e0": "garçon",
-  "06d4721edc82eada": "En français : « Le garçon talentueux… » vs « La fille talentueuse… » — les terminaisons des adjectifs changent en fonction du genre.",
+  "03c96249c43ca8e0": "Garçon",
+  "06d4721edc82eada": "En français, « Le garçon talentueux… » vs « La fille talentueuse… » — les terminaisons des adjectifs changent avec le genre.",
   "0b4236070d21a38c": [
     "Le ",
     {
@@ -17,10 +17,10 @@
     },
     "."
   ],
-  "0e9d7e4fdc7a8cd2": "C’est essentiel pour les langues avec genre grammatical, classes nominales ou systèmes de cas grammaticaux, où les articles, les adjectifs et les formes verbales doivent s’accorder avec le sujet ou le complément.",
+  "0e9d7e4fdc7a8cd2": "C’est essentiel pour les langues avec genre grammatical, classes nominales ou systèmes de cas, où les articles, les adjectifs et les verbes doivent s’accorder avec le sujet ou le complément d’objet.",
   "1935381cfb77f6dc": "heureux",
   "2982934653de205f": "intelligent",
-  "378ba3d178c388f4": "2 × 2 = 4 variantes de traduction :",
+  "378ba3d178c388f4": "2 × 2 = 4 entrées de traduction :",
   "39d8b560b3852671": "Langue de l’exemple :",
   "4344adb83d3a633b": "Démo d’analyse statique",
   "46c2a87adebd3734": "🧠 Intelligent",
@@ -49,12 +49,11 @@
     },
     "."
   ],
-  "67865a58c310f38f": "'<'Static'>' indique au GT CLI d’analyser statiquement toutes les valeurs de retour possibles d’une fonction et de créer des entrées de traduction distinctes pour chaque permutation.",
-  "68a15dc3398eea3b": "La fille talentueuse a remporté le prix.",
-  "75a2ac8496574d00": "Accord grammatical entre les langues",
+  "68a15dc3398eea3b": "La fille talentueuse a gagné le prix.",
+  "75a2ac8496574d00": "Concordance grammaticale entre langues",
   "76c017d1768e9bd5": "Accord sujet × adjectif",
-  "7cbf941a134377d5": "Le garçon talentueux a remporté le prix.",
-  "9c950bd4e1127395": "En espagnol : « El niño es muy listo » vs « La niña es muy lista » — la terminaison de l’adjectif change pour s’accorder avec le genre du sujet.",
+  "7cbf941a134377d5": "Le garçon talentueux a gagné le prix.",
+  "9c950bd4e1127395": "En espagnol : « El niño es muy listo » vs « La niña es muy lista » — la terminaison de l’adjectif change selon le genre du sujet.",
   "a2bc65d484a5d894": "👧 Fille",
   "a2c03c0108c32feb": "Traduction de chaînes",
   "a57f40ac4d67fb79": "fille",
@@ -83,8 +82,7 @@
     },
     "."
   ],
-  "d6b82967ed7db7af": "En espagnol : « El niño está jugando… » vs « La niña está jugando… » — l’article change selon le genre.",
-  "db1bc7c05e3d6241": "Contrairement à « <Var> » (qui insère une variable d’exécution dans une seule traduction), « <Static> » génère plusieurs traductions complètes — une par valeur —, de sorte que la phrase entière s’adapte à chaque cas.",
+  "d6b82967ed7db7af": "En espagnol : « El niño está jugando… » et « La niña está jugando… » — l’article change en fonction du genre.",
   "e0ddc83f64782e73": [
     "Le ",
     {

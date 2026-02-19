@@ -1,7 +1,7 @@
 {
   "03b0c7f1911065f7": "Cómo funciona",
   "03c96249c43ca8e0": "niño",
-  "06d4721edc82eada": "En francés: «Le garçon talentueux…» frente a «La fille talentueuse…» — las terminaciones de los adjetivos varían según el género gramatical.",
+  "06d4721edc82eada": "En francés: «Le garçon talentueux…» y «La fille talentueuse…» — las terminaciones de los adjetivos cambian según el género.",
   "0b4236070d21a38c": [
     "El ",
     {
@@ -17,13 +17,13 @@
     },
     "."
   ],
-  "0e9d7e4fdc7a8cd2": "Esto es fundamental para idiomas con género gramatical, clases de sustantivos o sistemas de casos, donde los artículos, adjetivos y formas verbales deben concordar con el sujeto o el objeto.",
+  "0e9d7e4fdc7a8cd2": "Esto es fundamental para los idiomas con género gramatical, clases de sustantivos o sistemas de casos en los que los artículos, adjetivos y formas verbales deben concordar con el sujeto u objeto.",
   "1935381cfb77f6dc": "feliz",
-  "2982934653de205f": "lista",
+  "2982934653de205f": "inteligente",
   "378ba3d178c388f4": "2 × 2 = 4 entradas de traducción:",
-  "39d8b560b3852671": "Ejemplo de idioma:",
-  "4344adb83d3a633b": "Demo de Static",
-  "46c2a87adebd3734": "🧠 Listo/a",
+  "39d8b560b3852671": "Idioma de ejemplo:",
+  "4344adb83d3a633b": "Demostración de análisis estático",
+  "46c2a87adebd3734": "🧠 Listo",
   "4a85aae8f13e1d9d": [
     "La ",
     {
@@ -49,15 +49,14 @@
     },
     "."
   ],
-  "67865a58c310f38f": "'<'Static'>' le indica a la CLI de GT que analice de forma estática todos los posibles valores de retorno de una función y cree entradas de traducción independientes para cada combinación.",
-  "68a15dc3398eea3b": "La chica talentosa ganó el premio.",
-  "75a2ac8496574d00": "Concordancia gramatical entre idiomas",
-  "76c017d1768e9bd5": "Concordancia sujeto × adjetivo",
-  "7cbf941a134377d5": "El chico talentoso ganó el premio.",
-  "9c950bd4e1127395": "En español decimos: «El niño es muy listo» vs «La niña es muy lista» — la terminación del adjetivo cambia para concordar con el género del sujeto.",
+  "68a15dc3398eea3b": "La niña talentosa ganó el premio.",
+  "75a2ac8496574d00": "Concordancia gramatical entre distintos idiomas",
+  "76c017d1768e9bd5": "Concordancia entre sujeto y adjetivo",
+  "7cbf941a134377d5": "El niño talentoso ganó el premio.",
+  "9c950bd4e1127395": "En español: «El niño es muy listo» vs «La niña es muy lista» — la terminación del adjetivo cambia para concordar con el género del sujeto.",
   "a2bc65d484a5d894": "👧 Niña",
   "a2c03c0108c32feb": "Traducción de cadenas",
-  "a57f40ac4d67fb79": "chica",
+  "a57f40ac4d67fb79": "niña",
   "bd1ab7ea21aa24d6": [
     "El ",
     {
@@ -83,8 +82,7 @@
     },
     "."
   ],
-  "d6b82967ed7db7af": "En español decimos: «El niño está jugando…» vs «La niña está jugando…» — el artículo cambia según el género.",
-  "db1bc7c05e3d6241": "A diferencia de <Var> (que inserta una variable en tiempo de ejecución en una única traducción), <Static> crea varias traducciones completas —una por valor—, de modo que toda la oración se adapta en cada caso.",
+  "d6b82967ed7db7af": "En español: «El niño está jugando…» vs «La niña está jugando…» — el artículo cambia según el género.",
   "e0ddc83f64782e73": [
     "El ",
     {
