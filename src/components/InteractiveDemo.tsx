@@ -86,8 +86,8 @@ export default function InteractiveDemo({
 
   return (
     <div className="space-y-6">
-      {/* Scenario 1: Gendered adjective */}
-      <Card title="Gendered Adjective Agreement" badge="<Static>">
+      {/* Scenario 1: Gendered subject */}
+      <Card title="Gendered Subject" badge="<Static>">
         <ToggleGroup
           options={[
             { label: "👦 Boy", value: "male" },
@@ -98,12 +98,12 @@ export default function InteractiveDemo({
         />
         <OutputBox>{scenario1[s1Gender]}</OutputBox>
         <CodeLine>
-          {`<T>The <Static>{getAdjective("${s1Gender}")}</Static> <Static>{getSubject("${s1Gender}")}</Static> is playing in the park.</T>`}
+          {`<T>The <Static>{getSubject(gender)}</Static> is playing in the park.</T>`}
         </CodeLine>
         <p className="text-xs text-neutral-500 italic">
-          In Spanish: &quot;El <strong>guapo</strong> niño…&quot; vs &quot;La{" "}
-          <strong>hermosa</strong> niña…&quot; — both the article and adjective
-          change with gender.
+          In Spanish: &quot;El <strong>niño</strong> está jugando…&quot; vs
+          &quot;La <strong>niña</strong> está jugando…&quot; — the article
+          changes with gender.
         </p>
       </Card>
 

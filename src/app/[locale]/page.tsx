@@ -4,10 +4,6 @@ import { LocaleSelector } from "gt-next";
 import InteractiveDemo from "@/components/InteractiveDemo";
 
 // Helper functions for Static analysis — each must have statically analyzable returns
-function getGenderedDescription(gender: "male" | "female") {
-  return gender === "male" ? "handsome boy" : "beautiful girl";
-}
-
 function getSubject(gender: "male" | "female") {
   return gender === "male" ? "boy" : "girl";
 }
@@ -22,13 +18,12 @@ const adjectives = ["clever", "happy"] as const;
 export default async function Home() {
   const gt = await getGT();
 
-  // Scenario 1: Gendered adjective — one <T>, CLI generates permutations
+  // Scenario 1: Gendered subject — one <T>, CLI generates permutations
   const scenario1: Record<string, React.ReactNode> = {};
   for (const gender of subjectGenders) {
     scenario1[gender] = (
       <T>
-        The <Static>{getGenderedDescription(gender)}</Static> is playing in the
-        park.
+        The <Static>{getSubject(gender)}</Static> is playing in the park.
       </T>
     );
   }

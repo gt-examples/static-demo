@@ -33,19 +33,10 @@
     "i": 1,
     "t": "p"
   },
-  "356ba1c7bf2c66e9": [
-    "El ",
-    {
-      "c": "handsome boy",
-      "i": 1,
-      "t": "Static"
-    },
-    " está jugando en el parque."
-  ],
-  "45c5edb0a82e92e8": [
+  "4a85aae8f13e1d9d": [
     "La ",
     {
-      "c": "beautiful girl",
+      "c": "girl",
       "i": 1,
       "t": "Static"
     },
@@ -73,6 +64,15 @@
     "i": 1,
     "t": "h2"
   },
+  "bd1ab7ea21aa24d6": [
+    "El ",
+    {
+      "c": "boy",
+      "i": 1,
+      "t": "Static"
+    },
+    " está jugando en el parque."
+  ],
   "cb7c5a5d4aebdd3e": [
     "La ",
     {
@@ -80,7 +80,7 @@
       "i": 1,
       "t": "Static"
     },
-    " es muy ",
+    " está muy ",
     {
       "c": "feliz",
       "i": 2,
