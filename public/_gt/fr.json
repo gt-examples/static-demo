@@ -1,0 +1,190 @@
+{
+  "0cd4efc5aab7a321": "Salut ! Nous espérons que tu apprécieras ta visite.",
+  "3a9dc63809f8f4df": [
+    "La ",
+    {
+      "c": "girl",
+      "i": 1,
+      "t": "Static"
+    },
+    " joue avec le ",
+    {
+      "c": "crayon",
+      "i": 2,
+      "t": "Static"
+    },
+    "."
+  ],
+  "3ad483a93984b067": [
+    {
+      "i": 1,
+      "k": "_gt_value_1",
+      "v": "v"
+    },
+    " & ",
+    {
+      "i": 2,
+      "k": "_gt_value_2",
+      "v": "v"
+    },
+    " Démo"
+  ],
+  "4a85aae8f13e1d9d": [
+    "La ",
+    {
+      "c": "girl",
+      "i": 1,
+      "t": "Static"
+    },
+    " joue dans le parc."
+  ],
+  "507ed8308de09ba9": "Bienvenue, cher invité ! Nous espérons que vous apprécierez votre visite.",
+  "538b65d6b8b06d11": {
+    "c": [
+      "Cette Démo montre comment la Traduction générale gère l'accord grammatical entre les langues en utilisant ",
+      {
+        "i": 2,
+        "k": "_gt_value_2",
+        "v": "v"
+      },
+      " et ",
+      {
+        "i": 3,
+        "k": "_gt_value_3",
+        "v": "v"
+      },
+      ". Activez ou désactivez les options ci-dessous et changez de langue pour voir comment les traductions s'adaptent."
+    ],
+    "i": 1,
+    "t": "p"
+  },
+  "559397a2a06ec1e2": [
+    "La ",
+    {
+      "c": "girl",
+      "i": 1,
+      "t": "Static"
+    },
+    " joue avec le ",
+    {
+      "c": "book",
+      "i": 2,
+      "t": "Static"
+    },
+    "."
+  ],
+  "5c82e850c7d1c347": [
+    "Cher ",
+    {
+      "c": "Mr.",
+      "i": 1,
+      "t": "Static"
+    },
+    " ",
+    {
+      "i": 2,
+      "k": "name",
+      "v": "v"
+    },
+    ", bienvenue sur notre plateforme !"
+  ],
+  "9245afc675c783bc": [
+    "Le ",
+    {
+      "c": "boy",
+      "i": 1,
+      "t": "Static"
+    },
+    " joue avec le ",
+    {
+      "c": "book",
+      "i": 2,
+      "t": "Static"
+    },
+    "."
+  ],
+  "95f634b691986db4": [
+    "La ",
+    {
+      "c": "girl",
+      "i": 1,
+      "t": "Static"
+    },
+    " joue avec le ",
+    {
+      "c": "ball",
+      "i": 2,
+      "t": "Static"
+    },
+    "."
+  ],
+  "99c81abef20078f1": [
+    "Le ",
+    {
+      "c": "boy",
+      "i": 1,
+      "t": "Static"
+    },
+    " joue avec le ",
+    {
+      "c": "crayon",
+      "i": 2,
+      "t": "Static"
+    },
+    "."
+  ],
+  "bd1ab7ea21aa24d6": [
+    "Le ",
+    {
+      "c": "boy",
+      "i": 1,
+      "t": "Static"
+    },
+    " joue dans le parc."
+  ],
+  "c2d4fff794994c9d": [
+    "Chère ",
+    {
+      "c": "Ms.",
+      "i": 1,
+      "t": "Static"
+    },
+    " ",
+    {
+      "i": 2,
+      "k": "name",
+      "v": "v"
+    },
+    ", bienvenue sur notre plateforme !"
+  ],
+  "df1081195d9cfc06": [
+    "Cher·ère ",
+    {
+      "c": "Mx.",
+      "i": 1,
+      "t": "Static"
+    },
+    " ",
+    {
+      "i": 2,
+      "k": "name",
+      "v": "v"
+    },
+    ", bienvenue sur notre plateforme !"
+  ],
+  "f99a0c8b277475f2": [
+    "Le ",
+    {
+      "c": "boy",
+      "i": 1,
+      "t": "Static"
+    },
+    " joue avec le ",
+    {
+      "c": "ball",
+      "i": 2,
+      "t": "Static"
+    },
+    "."
+  ]
+}
