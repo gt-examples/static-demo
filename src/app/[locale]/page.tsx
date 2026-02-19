@@ -1,5 +1,5 @@
 import { T, Static, Var } from "gt-next";
-import { getGT } from "gt-next/server";
+import { getGT, declareStatic } from "gt-next/server";
 import { LocaleSelector } from "gt-next";
 import InteractiveDemo from "@/components/InteractiveDemo";
 
@@ -46,10 +46,13 @@ export default async function Home() {
     }
   }
 
-  // Scenario 3: String version with gt()
+  // Scenario 3: String version with declareStatic() — one gt() call, CLI generates permutations
   const scenario3: Record<string, string> = {};
-  scenario3["male"] = gt("The talented boy won the prize.");
-  scenario3["female"] = gt("The talented girl won the prize.");
+  for (const gender of subjectGenders) {
+    scenario3[gender] = gt(
+      `The talented ${declareStatic(getSubject(gender))} won the prize.`
+    );
+  }
 
   return (
     <div className="min-h-screen bg-neutral-950 font-sans text-neutral-200">

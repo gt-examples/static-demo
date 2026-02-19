@@ -163,7 +163,7 @@ export default function InteractiveDemo({
       </Card>
 
       {/* Scenario 3: String version */}
-      <Card title="String Translation" badge="gt()">
+      <Card title="String Translation" badge="declareStatic()">
         <ToggleGroup
           options={[
             { label: "👦 Boy", value: "male" },
@@ -174,7 +174,7 @@ export default function InteractiveDemo({
         />
         <OutputBox>{scenario3[s3Gender]}</OutputBox>
         <CodeLine>
-          {`gt(gender === "male" ? "The talented boy won the prize." : "The talented girl won the prize.")`}
+          {`gt(\`The talented \${declareStatic(getSubject(gender))} won the prize.\`)`}
         </CodeLine>
         <p className="text-xs text-neutral-500 italic">
           In French: &quot;Le garçon <strong>talentueux</strong>…&quot; vs
