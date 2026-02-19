@@ -1,5 +1,38 @@
 {
-  "0cd4efc5aab7a321": "¡Oye! Esperamos que disfrutes tu visita.",
+  "0c95b33663520dab": [
+    "El ",
+    {
+      "c": "handsome",
+      "i": 1,
+      "t": "Static"
+    },
+    " ",
+    {
+      "c": "boy",
+      "i": 2,
+      "t": "Static"
+    },
+    " está jugando en el parque."
+  ],
+  "2d783dc73d433070": {
+    "c": [
+      "Activa las opciones a continuación y cambia de idioma para ver cómo ",
+      {
+        "i": 2,
+        "k": "_gt_value_2",
+        "v": "v"
+      },
+      " y ",
+      {
+        "i": 3,
+        "k": "_gt_value_3",
+        "v": "v"
+      },
+      " generan entradas de traducción separadas para cada permutación, lo que permite una concordancia gramatical adecuada."
+    ],
+    "i": 1,
+    "t": "p"
+  },
   "3a9dc63809f8f4df": [
     "La ",
     {
@@ -15,49 +48,21 @@
     },
     "."
   ],
-  "3ad483a93984b067": [
-    {
-      "i": 1,
-      "k": "_gt_value_1",
-      "v": "v"
-    },
-    " & ",
-    {
-      "i": 2,
-      "k": "_gt_value_2",
-      "v": "v"
-    },
-    " Demostración"
-  ],
-  "4a85aae8f13e1d9d": [
+  "41dd570e506ef17b": [
     "La ",
     {
-      "c": "girl",
+      "c": "handsome",
       "i": 1,
+      "t": "Static"
+    },
+    " ",
+    {
+      "c": "girl",
+      "i": 2,
       "t": "Static"
     },
     " está jugando en el parque."
   ],
-  "507ed8308de09ba9": "¡Le damos la bienvenida, estimado/a! Esperamos que disfrute de su visita.",
-  "538b65d6b8b06d11": {
-    "c": [
-      "Esta Demostración muestra cómo Traducción general gestiona la concordancia gramatical entre idiomas usando ",
-      {
-        "i": 2,
-        "k": "_gt_value_2",
-        "v": "v"
-      },
-      " y ",
-      {
-        "i": 3,
-        "k": "_gt_value_3",
-        "v": "v"
-      },
-      ". Activa o desactiva las opciones de abajo y cambia de idioma para ver cómo se adaptan las traducciones."
-    ],
-    "i": 1,
-    "t": "p"
-  },
   "559397a2a06ec1e2": [
     "La ",
     {
@@ -73,21 +78,8 @@
     },
     "."
   ],
-  "5c82e850c7d1c347": [
-    "Estimado ",
-    {
-      "c": "Mr.",
-      "i": 1,
-      "t": "Static"
-    },
-    " ",
-    {
-      "i": 2,
-      "k": "name",
-      "v": "v"
-    },
-    ", ¡bienvenido/a a nuestra plataforma!"
-  ],
+  "68a15dc3398eea3b": "La girl talentosa ganó el premio.",
+  "7cbf941a134377d5": "El boy talentoso ganó el premio.",
   "9245afc675c783bc": [
     "El ",
     {
@@ -133,44 +125,40 @@
     },
     "."
   ],
-  "bd1ab7ea21aa24d6": [
+  "a14aed695a153d28": {
+    "c": "Concordancia gramatical entre idiomas",
+    "i": 1,
+    "t": "h2"
+  },
+  "d3af558cf107e3f5": [
     "El ",
     {
-      "c": "boy",
+      "c": "beautiful",
       "i": 1,
+      "t": "Static"
+    },
+    " ",
+    {
+      "c": "boy",
+      "i": 2,
       "t": "Static"
     },
     " está jugando en el parque."
   ],
-  "c2d4fff794994c9d": [
-    "Estimada ",
+  "f3040272267b187d": [
+    "La ",
     {
-      "c": "Ms.",
+      "c": "hermosa",
       "i": 1,
       "t": "Static"
     },
     " ",
     {
+      "c": "girl",
       "i": 2,
-      "k": "name",
-      "v": "v"
-    },
-    ", ¡bienvenido/a a nuestra plataforma!"
-  ],
-  "df1081195d9cfc06": [
-    "Estimado/a ",
-    {
-      "c": "Mx.",
-      "i": 1,
       "t": "Static"
     },
-    " ",
-    {
-      "i": 2,
-      "k": "name",
-      "v": "v"
-    },
-    ", ¡bienvenido/a a nuestra plataforma!"
+    " está jugando en el parque."
   ],
   "f99a0c8b277475f2": [
     "El ",

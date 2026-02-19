@@ -1,13 +1,11 @@
 // Helper functions that return static values for <Static> and declareStatic()
 
-export function getTitle(gender: "male" | "female" | "neutral"): string {
-  if (gender === "male") return "Mr.";
-  if (gender === "female") return "Ms.";
-  return "Mx.";
-}
-
 export function getSubject(gender: "male" | "female"): string {
   return gender === "male" ? "boy" : "girl";
+}
+
+export function getAdjective(gender: "male" | "female"): string {
+  return gender === "male" ? "handsome" : "beautiful";
 }
 
 export function getItem(item: "ball" | "crayon" | "book"): string {
@@ -17,5 +15,5 @@ export function getItem(item: "ball" | "crayon" | "book"): string {
 }
 
 export function getFormalGreeting(formality: "formal" | "informal"): string {
-  return formality === "formal" ? "Welcome esteemed" : "Hey";
+  return formality === "formal" ? "Welcome, esteemed" : "Hey";
 }
