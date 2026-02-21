@@ -92,8 +92,8 @@ export default function InteractiveDemo({
       <Card title={gt("Gendered Subject")} badge="<Static>">
         <ToggleGroup
           options={[
-            { label: gt("👦 Boy"), value: "male" },
-            { label: gt("👧 Girl"), value: "female" },
+            { label: gt("Boy"), value: "male" },
+            { label: gt("Girl"), value: "female" },
           ]}
           value={s1Gender}
           onChange={setS1Gender}
@@ -115,16 +115,16 @@ export default function InteractiveDemo({
         <div className="flex flex-wrap gap-2">
           <ToggleGroup
             options={[
-              { label: gt("👦 Boy"), value: "male" },
-              { label: gt("👧 Girl"), value: "female" },
+              { label: gt("Boy"), value: "male" },
+              { label: gt("Girl"), value: "female" },
             ]}
             value={s2Gender}
             onChange={setS2Gender}
           />
           <ToggleGroup
             options={[
-              { label: gt("🧠 Clever"), value: "clever" },
-              { label: gt("😊 Happy"), value: "happy" },
+              { label: gt("Clever"), value: "clever" },
+              { label: gt("Happy"), value: "happy" },
             ]}
             value={s2Adj}
             onChange={setS2Adj}
@@ -165,8 +165,8 @@ export default function InteractiveDemo({
       <Card title={gt("String Translation")} badge="declareStatic()">
         <ToggleGroup
           options={[
-            { label: gt("👦 Boy"), value: "male" },
-            { label: gt("👧 Girl"), value: "female" },
+            { label: gt("Boy"), value: "male" },
+            { label: gt("Girl"), value: "female" },
           ]}
           value={s3Gender}
           onChange={setS3Gender}
