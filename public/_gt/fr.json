@@ -1,7 +1,7 @@
 {
   "03b0c7f1911065f7": "Comment ça marche",
-  "03c96249c43ca8e0": "Garçon",
-  "06d4721edc82eada": "En français, « Le garçon talentueux… » vs « La fille talentueuse… » — les terminaisons des adjectifs changent avec le genre.",
+  "03c96249c43ca8e0": "garçon",
+  "06d4721edc82eada": "En français : « Le garçon talentueux… » vs « La fille talentueuse… » — les terminaisons des adjectifs changent en fonction du genre.",
   "0b4236070d21a38c": [
     "Le ",
     {
@@ -17,13 +17,14 @@
     },
     "."
   ],
-  "0e9d7e4fdc7a8cd2": "C’est essentiel pour les langues avec genre grammatical, classes nominales ou systèmes de cas, où les articles, les adjectifs et les verbes doivent s’accorder avec le sujet ou le complément d’objet.",
+  "0e74a4df00d31209": "Heureux",
+  "0e9d7e4fdc7a8cd2": "C’est essentiel pour les langues avec genre grammatical, classes nominales ou systèmes de cas, où les articles, les adjectifs et les formes verbales doivent s’accorder avec le sujet ou l’objet.",
   "1935381cfb77f6dc": "heureux",
   "2982934653de205f": "intelligent",
-  "378ba3d178c388f4": "2 × 2 = 4 entrées de traduction :",
+  "34fa6075fc71b87b": "Fille",
+  "378ba3d178c388f4": "2 × 2 = 4 chaînes de traduction :",
   "39d8b560b3852671": "Langue de l’exemple :",
-  "4344adb83d3a633b": "Démo d’analyse statique",
-  "46c2a87adebd3734": "🧠 Intelligent",
+  "4344adb83d3a633b": "Démo du composant Static",
   "4a85aae8f13e1d9d": [
     "La ",
     {
@@ -34,6 +35,36 @@
     " joue dans le parc."
   ],
   "4c58623ebf27c1ae": "Sujet avec genre grammatical",
+  "4c98e60430f26c13": [
+    "Cette application est un exemple construit avec ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    " pour illustrer les fonctionnalités d'internationalisation. Ce n'est pas un vrai produit."
+  ],
+  "566fdca869371e7f": [
+    "Construit avec ",
+    {
+      "c": "Next.js",
+      "i": 1,
+      "t": "a"
+    },
+    " et ",
+    {
+      "c": "gt-next",
+      "i": 2,
+      "t": "a"
+    },
+    ". En savoir plus sur ",
+    {
+      "c": "le composant Static",
+      "i": 3,
+      "t": "a"
+    },
+    "."
+  ],
   "5b7046f5d33f8277": [
     "La ",
     {
@@ -49,14 +80,14 @@
     },
     "."
   ],
-  "68a15dc3398eea3b": "La fille talentueuse a gagné le prix.",
-  "6d26e1e92ae8dcd1": "Contrairement au composant Var (qui insère une variable évaluée à l’exécution dans une seule traduction), le composant Static génère plusieurs traductions complètes — une par valeur possible — afin que la phrase entière s’adapte à chaque cas.",
-  "75a2ac8496574d00": "Concordance grammaticale entre langues",
+  "68a15dc3398eea3b": "La fille talentueuse a remporté le prix.",
+  "6d26e1e92ae8dcd1": "Contrairement au composant Var (qui insère une variable d’exécution dans une seule traduction), le composant Static génère plusieurs traductions complètes — une par valeur — afin que la phrase entière soit adaptée à chaque cas.",
+  "75a2ac8496574d00": "Accord grammatical selon la langue",
   "76c017d1768e9bd5": "Accord sujet × adjectif",
-  "7cbf941a134377d5": "Le garçon talentueux a gagné le prix.",
-  "86ba91ab02f62d36": "Le composant Static indique au GT CLI d’analyser statiquement toutes les valeurs de retour possibles d’une fonction et de créer des entrées de traduction distinctes pour chaque permutation.",
-  "9c950bd4e1127395": "En espagnol : « El niño es muy listo » vs « La niña es muy lista » — la terminaison de l’adjectif change selon le genre du sujet.",
-  "a2bc65d484a5d894": "👧 Fille",
+  "7cbf941a134377d5": "Le garçon talentueux a remporté le prix.",
+  "86ba91ab02f62d36": "Le composant Static demande à GT CLI d’analyser statiquement toutes les valeurs de retour possibles d’une fonction, puis de créer des entrées de traduction distinctes pour chaque permutation.",
+  "9b10fddc2acf321d": "Garçon",
+  "9c950bd4e1127395": "En espagnol : « El niño es muy listo » vs « La niña es muy lista » — la terminaison de l’adjectif change pour s’accorder avec le genre du sujet.",
   "a2c03c0108c32feb": "Traduction de chaînes",
   "a57f40ac4d67fb79": "fille",
   "bd1ab7ea21aa24d6": [
@@ -68,7 +99,6 @@
     },
     " joue dans le parc."
   ],
-  "c0a9d603ff6da978": "😊 Heureux",
   "cb7c5a5d4aebdd3e": [
     "La ",
     {
@@ -84,7 +114,7 @@
     },
     "."
   ],
-  "d6b82967ed7db7af": "En espagnol : « El niño está jugando… » et « La niña está jugando… » — l’article change en fonction du genre.",
+  "d6b82967ed7db7af": "En espagnol : « El niño está jugando… » vs « La niña está jugando… » — l’article change selon le genre du sujet.",
   "e0ddc83f64782e73": [
     "Le ",
     {
@@ -100,8 +130,14 @@
     },
     "."
   ],
-  "eab2341fa8acc29c": [
-    "Activez les options ci-dessous et changez de langue pour voir comment <Static> et declareStatic() génèrent des entrées de traduction distinctes pour chaque permutation, permettant un accord grammatical correct."
+  "e1b00867bc1617af": [
+    "Activez les options ci-dessous et changez de langue pour voir comment <Static> et declareStatic() génèrent des entrées de traduction distinctes pour chaque permutation, permettant un ",
+    {
+      "c": "accord grammatical",
+      "i": 1,
+      "t": "a"
+    },
+    " correct."
   ],
-  "f9c87668da6574bd": "👦 Garçon"
+  "e229c59c86479c75": "Intelligent"
 }

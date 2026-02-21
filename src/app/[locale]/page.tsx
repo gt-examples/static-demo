@@ -52,6 +52,27 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-neutral-950 font-sans text-neutral-200">
+      {/* Disclaimer banner */}
+      <div className="bg-amber-950/50 border-b border-amber-900/50">
+        <div className="max-w-3xl mx-auto px-6 py-2.5 text-center">
+          <p className="text-xs text-amber-200/80">
+            <T>
+              This is an example app built with{" "}
+              <a
+                href="https://generaltranslation.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-amber-100"
+              >
+                General Translation
+              </a>{" "}
+              to demonstrate internationalization features. It is not a real
+              product.
+            </T>
+          </p>
+        </div>
+      </div>
+
       <header className="border-b border-neutral-800 bg-neutral-950">
         <div className="max-w-3xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -94,7 +115,15 @@ export default async function Home() {
             <T>
               Toggle the options below and switch languages to see how{" "}
               {"<Static>"} and declareStatic() generate separate translation
-              entries for each permutation, enabling proper grammatical agreement.
+              entries for each permutation, enabling proper{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Agreement_(linguistics)"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-neutral-200"
+              >
+                grammatical agreement
+              </a>.
             </T>
           </p>
           <LanguageBadge />
@@ -105,6 +134,41 @@ export default async function Home() {
           scenario2={scenario2}
           scenario3={scenario3}
         />
+
+        <footer className="mt-16 pt-8 border-t border-neutral-800 text-center">
+          <p className="text-xs text-neutral-500">
+            <T>
+              Built with{" "}
+              <a
+                href="https://nextjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-neutral-300"
+              >
+                Next.js
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://generaltranslation.com/docs/next"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-neutral-300"
+              >
+                gt-next
+              </a>
+              . Learn more about{" "}
+              <a
+                href="https://generaltranslation.com/docs/next/api/components/static"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-neutral-300"
+              >
+                the Static component
+              </a>
+              .
+            </T>
+          </p>
+        </footer>
       </main>
     </div>
   );

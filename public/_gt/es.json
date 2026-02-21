@@ -1,7 +1,7 @@
 {
   "03b0c7f1911065f7": "Cómo funciona",
   "03c96249c43ca8e0": "niño",
-  "06d4721edc82eada": "En francés: «Le garçon talentueux…» y «La fille talentueuse…» — las terminaciones de los adjetivos cambian según el género.",
+  "06d4721edc82eada": "En francés, «Le garçon talentueux…» y «La fille talentueuse…»: las terminaciones de los adjetivos cambian según el género.",
   "0b4236070d21a38c": [
     "El ",
     {
@@ -17,13 +17,14 @@
     },
     "."
   ],
-  "0e9d7e4fdc7a8cd2": "Esto es fundamental para los idiomas con género gramatical, clases de sustantivos o sistemas de casos en los que los artículos, adjetivos y formas verbales deben concordar con el sujeto u objeto.",
+  "0e74a4df00d31209": "Feliz",
+  "0e9d7e4fdc7a8cd2": "Esto es fundamental para los idiomas con género gramatical, clases nominales o sistemas de casos, donde los artículos, los adjetivos y las formas verbales deben concordar con el sujeto o el objeto.",
   "1935381cfb77f6dc": "feliz",
-  "2982934653de205f": "inteligente",
-  "378ba3d178c388f4": "2 × 2 = 4 entradas de traducción:",
+  "2982934653de205f": "lista",
+  "34fa6075fc71b87b": "Niña",
+  "378ba3d178c388f4": "2 × 2 = 4 variantes de traducción:",
   "39d8b560b3852671": "Idioma de ejemplo:",
   "4344adb83d3a633b": "Demostración de análisis estático",
-  "46c2a87adebd3734": "🧠 Listo",
   "4a85aae8f13e1d9d": [
     "La ",
     {
@@ -34,6 +35,36 @@
     " está jugando en el parque."
   ],
   "4c58623ebf27c1ae": "Sujeto con género gramatical",
+  "4c98e60430f26c13": [
+    "Esta es una aplicación de ejemplo creada con ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    " para demostrar funciones de internacionalización. No es un producto real."
+  ],
+  "566fdca869371e7f": [
+    "Desarrollado con ",
+    {
+      "c": "Next.js",
+      "i": 1,
+      "t": "a"
+    },
+    " y ",
+    {
+      "c": "gt-next",
+      "i": 2,
+      "t": "a"
+    },
+    ". Más información sobre ",
+    {
+      "c": "el componente estático",
+      "i": 3,
+      "t": "a"
+    },
+    "."
+  ],
   "5b7046f5d33f8277": [
     "La ",
     {
@@ -49,14 +80,14 @@
     },
     "."
   ],
-  "68a15dc3398eea3b": "La niña talentosa ganó el premio.",
-  "6d26e1e92ae8dcd1": "A diferencia del componente Var (que inserta una variable en tiempo de ejecución en una única traducción), el componente Static genera varias traducciones completas —una por valor— para que toda la frase se adapte a cada caso.",
-  "75a2ac8496574d00": "Concordancia gramatical entre distintos idiomas",
+  "68a15dc3398eea3b": "La chica talentosa ganó el premio.",
+  "6d26e1e92ae8dcd1": "A diferencia del componente Var (que inserta una variable en tiempo de ejecución dentro de una única traducción), el componente Static genera varias traducciones completas —una por cada valor—, de modo que toda la frase se adapta en cada caso.",
+  "75a2ac8496574d00": "Concordancia gramatical entre idiomas",
   "76c017d1768e9bd5": "Concordancia entre sujeto y adjetivo",
-  "7cbf941a134377d5": "El niño talentoso ganó el premio.",
-  "86ba91ab02f62d36": "El componente Static le indica a GT CLI que analice de forma estática todos los posibles valores de retorno de una función y genere entradas de traducción independientes para cada permutación.",
+  "7cbf941a134377d5": "El chico talentoso ganó el premio.",
+  "86ba91ab02f62d36": "El componente Static indica a la CLI de GT que analice estáticamente todos los posibles valores de retorno de una función y cree entradas de traducción independientes para cada permutación.",
+  "9b10fddc2acf321d": "Niño",
   "9c950bd4e1127395": "En español: «El niño es muy listo» vs «La niña es muy lista» — la terminación del adjetivo cambia para concordar con el género del sujeto.",
-  "a2bc65d484a5d894": "👧 Niña",
   "a2c03c0108c32feb": "Traducción de cadenas",
   "a57f40ac4d67fb79": "niña",
   "bd1ab7ea21aa24d6": [
@@ -68,7 +99,6 @@
     },
     " está jugando en el parque."
   ],
-  "c0a9d603ff6da978": "😊 Feliz",
   "cb7c5a5d4aebdd3e": [
     "La ",
     {
@@ -92,7 +122,7 @@
       "i": 1,
       "t": "Static"
     },
-    " está muy ",
+    " es muy ",
     {
       "c": "feliz",
       "i": 2,
@@ -100,8 +130,14 @@
     },
     "."
   ],
-  "eab2341fa8acc29c": [
-    "Activa las opciones a continuación y cambia de idioma para ver cómo <Static> y declareStatic() generan entradas de traducción independientes para cada permutación, lo que permite una concordancia gramatical correcta."
+  "e1b00867bc1617af": [
+    "Activa las opciones a continuación y cambia de idioma para ver cómo <Static> y declareStatic() generan entradas de traducción separadas para cada permutación, lo que permite una ",
+    {
+      "c": "concordancia gramatical",
+      "i": 1,
+      "t": "a"
+    },
+    " correcta."
   ],
-  "f9c87668da6574bd": "👦 Niño"
+  "e229c59c86479c75": "Listo"
 }
