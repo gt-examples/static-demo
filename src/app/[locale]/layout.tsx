@@ -9,9 +9,9 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "<Static> & declareStatic() Demo | GT",
+  title: "<Derive> & derive() Demo | GT",
   description:
-    "Interactive demo of General Translation's <Static> and declareStatic() for grammatical agreement across languages",
+    "Interactive demo of General Translation's <Derive> and derive() for grammatical agreement across languages",
 };
 
 export default async function RootLayout({

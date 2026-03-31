@@ -1,10 +1,10 @@
-import { T, Static } from "gt-next";
-import { getGT, declareStatic } from "gt-next/server";
+import { T, Derive } from "gt-next";
+import { getGT, derive } from "gt-next/server";
 import { LocaleSelector } from "gt-next";
 import InteractiveDemo from "@/components/InteractiveDemo";
 import LanguageBadge from "@/components/LanguageBadge";
 
-// Helper functions for Static analysis — each must have statically analyzable returns
+// Helper functions for Derive — each must have statically analyzable returns — each must have statically analyzable returns
 function getSubject(gender: "male" | "female") {
   return gender === "male" ? "boy" : "girl";
 }
@@ -24,7 +24,7 @@ export default async function Home() {
   for (const gender of subjectGenders) {
     scenario1[gender] = (
       <T>
-        The <Static>{getSubject(gender)}</Static> is playing in the park.
+        The <Derive>{getSubject(gender)}</Derive> is playing in the park.
       </T>
     );
   }
@@ -35,18 +35,18 @@ export default async function Home() {
     for (const adj of adjectives) {
       scenario2[`${gender}-${adj}`] = (
         <T>
-          The <Static>{getSubject(gender)}</Static> is very{" "}
-          <Static>{getAdjective(adj)}</Static>.
+          The <Derive>{getSubject(gender)}</Derive> is very{" "}
+          <Derive>{getAdjective(adj)}</Derive>.
         </T>
       );
     }
   }
 
-  // Scenario 3: String version with declareStatic() — one gt() call, CLI generates permutations
+  // Scenario 3: String version with derive() — one gt() call, CLI generates permutations
   const scenario3: Record<string, string> = {};
   for (const gender of subjectGenders) {
     scenario3[gender] = gt(
-      `The talented ${declareStatic(getSubject(gender))} won the prize.`
+      `The talented ${derive(getSubject(gender))} won the prize.`
     );
   }
 
@@ -65,7 +65,7 @@ export default async function Home() {
             </a>
             <span className="text-neutral-700">/</span>
             <h1 className="text-sm font-semibold text-neutral-100">
-              {gt("Static Analysis Demo")}
+              {gt("Derive Demo")}
             </h1>
           </div>
           <div className="flex items-center gap-3">
@@ -93,7 +93,7 @@ export default async function Home() {
           <p className="text-base text-neutral-400 max-w-xl leading-relaxed mb-4">
             <T>
               Toggle the options below and switch languages to see how{" "}
-              {"<Static>"} and declareStatic() generate separate translation
+              {"<Derive>"} and derive() generate separate translation
               entries for each permutation, enabling proper grammatical agreement.
             </T>
           </p>
