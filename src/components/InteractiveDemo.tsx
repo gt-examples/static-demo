@@ -89,7 +89,7 @@ export default function InteractiveDemo({
   return (
     <div className="space-y-6">
       {/* Scenario 1: Gendered subject */}
-      <Card title={gt("Gendered Subject")} badge="<Static>">
+      <Card title={gt("Gendered Subject")} badge="<Derive>">
         <ToggleGroup
           options={[
             { label: gt("👦 Boy"), value: "male" },
@@ -100,7 +100,7 @@ export default function InteractiveDemo({
         />
         <OutputBox>{scenario1[s1Gender]}</OutputBox>
         <CodeLine>
-          {`<T>The <Static>{getSubject(gender)}</Static> is playing in the park.</T>`}
+          {`<T>The <Derive>{getSubject(gender)}</Derive> is playing in the park.</T>`}
         </CodeLine>
         <p className="text-xs text-neutral-500 italic">
           {gt('In Spanish: "El niño está jugando…" vs "La niña está jugando…" — the article changes with gender.')}
@@ -110,7 +110,7 @@ export default function InteractiveDemo({
       {/* Scenario 2: Subject × Adjective */}
       <Card
         title={gt("Subject × Adjective Agreement")}
-        badge="<Static> × <Static>"
+        badge="<Derive> × <Derive>"
       >
         <div className="flex flex-wrap gap-2">
           <ToggleGroup
@@ -132,7 +132,7 @@ export default function InteractiveDemo({
         </div>
         <OutputBox>{scenario2[`${s2Gender}-${s2Adj}`]}</OutputBox>
         <CodeLine>
-          {`<T>The <Static>{getSubject(...)}</Static> is very <Static>{getAdjective(...)}</Static>.</T>`}
+          {`<T>The <Derive>{getSubject(...)}</Derive> is very <Derive>{getAdjective(...)}</Derive>.</T>`}
         </CodeLine>
         <p className="text-xs text-neutral-500 italic">
           {gt('In Spanish: "El niño es muy listo" vs "La niña es muy lista" — the adjective ending changes to agree with the subject\'s gender.')}
@@ -162,7 +162,7 @@ export default function InteractiveDemo({
       </Card>
 
       {/* Scenario 3: String version */}
-      <Card title={gt("String Translation")} badge="declareStatic()">
+      <Card title={gt("String Translation")} badge="derive()">
         <ToggleGroup
           options={[
             { label: gt("👦 Boy"), value: "male" },
@@ -173,7 +173,7 @@ export default function InteractiveDemo({
         />
         <OutputBox>{scenario3[s3Gender]}</OutputBox>
         <CodeLine>
-          {`gt(\`The talented \${declareStatic(getSubject(gender))} won the prize.\`)`}
+          {`gt(\`The talented \${derive(getSubject(gender))} won the prize.\`)`}
         </CodeLine>
         <p className="text-xs text-neutral-500 italic">
           {gt('In French: "Le garçon talentueux…" vs "La fille talentueuse…" — adjective endings change with gender.')}
@@ -187,13 +187,13 @@ export default function InteractiveDemo({
         </h2>
         <div className="text-sm text-neutral-400 space-y-2 leading-relaxed">
           <p>
-            {gt("The Static component tells the GT CLI to statically analyze all possible return values of a function and create separate translation entries for each permutation.")}
+            {gt("The Derive component tells the GT CLI to statically analyze all possible return values of a function and create separate translation entries for each permutation.")}
           </p>
           <p>
             {gt("This is critical for languages with grammatical gender, noun classes, or case systems where articles, adjectives, and verb forms must agree with the subject or object.")}
           </p>
           <p>
-            {gt("Unlike the Var component (which inserts a runtime variable into a single translation), the Static component creates multiple complete translations — one per value — so the entire sentence adapts for each case.")}
+            {gt("Unlike the Var component (which inserts a runtime variable into a single translation), the Derive component creates multiple complete translations — one per value — so the entire sentence adapts for each case.")}
           </p>
         </div>
       </div>

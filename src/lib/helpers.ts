@@ -1,4 +1,4 @@
-// Helper functions that return static values for <Static> and declareStatic()
+// Helper functions that return static values for <Derive> and derive()
 
 export function getSubject(gender: "male" | "female"): string {
   return gender === "male" ? "boy" : "girl";
